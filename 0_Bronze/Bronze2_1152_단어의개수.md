@@ -1,5 +1,6 @@
-##  백준 > Bronze2 > 1152번 단어의 개수
+##  백준 > Bronze2 > 1152번 : 단어의 개수
 
+코드
 ```python
 sen = input()
 answer = []
@@ -16,7 +17,7 @@ print(len(answer))
 The first character is a blank
 ```
 
-결과
+출력
 ```
 ['The', 'first', 'character', 'is', 'a', 'blank']
 6
