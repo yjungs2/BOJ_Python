@@ -3,10 +3,7 @@
 메모리 30840kb 시간 112ms  
 https://www.acmicpc.net/problem/1010  
 
-```
-#combinations 조합 라이브러리 사용
-```
-
+combinations 조합 라이브러리 사용  
 코드 (시간초과)
 ```python
 # Python3 시간 초과
