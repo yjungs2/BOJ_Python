@@ -12,6 +12,16 @@ ord()와
 # 영어 소문자
 # ord('a') = 97 ~ ord('z') = 122
 # 영어 대문자
+# ord('A') = 65 ~ ord('Z') = 90
+```
+
+대문자 <-> 소문자
+```python
+# 문자 모두 대문자로
+str.upper()
+# 문자 모두 소문자로
+str.lower()
+# 대문자 소문자 현재와 반대로
 
 ```
 
@@ -47,4 +57,22 @@ li.count(x)
 ```python
 # 추가
 s.add(x)
+```
+
+소수 출력
+```python
+# 소수점 일의 자리까지 출력
+format((숫자), '.1f')
+
+# print(f"{}")에서 바로 적용하기 (소수점 세자리 단위 출력)
+print(f"{숫자:.3f}")
+```
+
+최대공약수와 최소공배수
+```python
+def gcd(a, b): # 조건 : a >= b
+    if a % b == 0:
+        return b
+    else:
+        return gcd(b, a%b)
 ```
