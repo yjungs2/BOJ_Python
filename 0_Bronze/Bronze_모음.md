@@ -59,6 +59,14 @@ li.count(x)
 s.add(x)
 ```
 
+반올림 / 올림 / 내림
+```python
+# 반올림
+round
+# 내림
+int
+```
+
 소수 출력
 ```python
 # 소수점 일의 자리까지 출력
@@ -75,4 +83,14 @@ def gcd(a, b): # 조건 : a >= b
         return b
     else:
         return gcd(b, a%b)
+```
+
+최빈값 Counter
+```python
+from collections import Counter
+
+nums = [1,3,8,-2,2,3,8,6,6]
+nums.sort()
+cnt = Counter(nums).most_common()
+print(cnt) # [(3, 2), (6, 2), (8, 2), (-2, 1), (1, 1), (2, 1)]
 ```
