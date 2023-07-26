@@ -45,20 +45,6 @@ end = time.time()
 print(end - start)
 ```
 
-리스트 list() 관련 함수
-```python
-# 추가
-li.append(x)
-# 개수 세기
-li.count(x)
-```
-
-집합 set() 관련 함수
-```python
-# 추가
-s.add(x)
-```
-
 반올림 / 올림 / 내림
 ```python
 # 반올림
@@ -78,11 +64,15 @@ print(f"{숫자:.3f}")
 
 최대공약수와 최소공배수
 ```python
+# 최대공약수 함수 정의
 def gcd(a, b): # 조건 : a >= b
     if a % b == 0:
         return b
     else:
         return gcd(b, a%b)
+
+print(gcd(a,b)) # 최대공약수
+print(a*b//gcd(a,b)) # 최소공배수
 ```
 
 최빈값 Counter
@@ -93,4 +83,30 @@ nums = [1,3,8,-2,2,3,8,6,6]
 nums.sort()
 cnt = Counter(nums).most_common()
 print(cnt) # [(3, 2), (6, 2), (8, 2), (-2, 1), (1, 1), (2, 1)]
+```
+
+리스트 list() 관련 함수
+```python
+# 추가
+li.append(x)
+# 개수 세기
+li.count(x)
+# 특정 값을 가진 인덱스 찾기
+li.index(값)
+```
+
+집합 set() 관련 함수
+```python
+# 추가
+s.add(x)
+```
+
+딕셔너리 dict() 관련 함수
+```python
+# 딕셔너리 key 기준 정렬
+sorted_dic = sorted(dic.items(), key=lambda item:item[0]) # key 오름차순 정렬
+sorted_dic = sorted(dic.items(), key=lambda item:item[0], reverse=True) # key 내림차순 정렬
+# 딕셔너리 value 기준 정렬
+sorted_dic = sorted(dic.items(), key=lambda item:item[1]) # value 오름차순 정렬
+sorted_dic = sorted(dic.items(), key=lambda item:item[1], reverse=True) # value 내림차순 정렬
 ```
