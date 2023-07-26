@@ -55,13 +55,22 @@ round
 int
 ```
 
-소수 출력
+소수 형식으로 출력
 ```python
 # 소수점 일의 자리까지 출력
 format((숫자), '.1f')
 
 # print(f"{}")에서 바로 적용하기 (소수점 세자리 단위 출력)
 print(f"{숫자:.3f}")
+```
+
+소수(prime number) 판별
+```python
+def is_prime(num):
+  for x in range(2, int(num**0.5)+1):
+    if num%x == 0:
+      return False
+  return True
 ```
 
 최대공약수와 최소공배수
