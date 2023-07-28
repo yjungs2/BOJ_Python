@@ -55,7 +55,12 @@ round
 int
 ```
 
-소수 형식으로 출력
+정수 판별
+```python
+x.isdigit() # True/False
+```
+
+소수점 형식으로 출력
 ```python
 # 소수점 일의 자리까지 출력
 format((숫자), '.1f')
@@ -120,4 +125,12 @@ sorted_dic = sorted(dic.items(), key=lambda item:item[0], reverse=True) # key �
 # 딕셔너리 value 기준 정렬
 sorted_dic = sorted(dic.items(), key=lambda item:item[1]) # value 오름차순 정렬
 sorted_dic = sorted(dic.items(), key=lambda item:item[1], reverse=True) # value 내림차순 정렬
+```
+
+런타임 에러 해결하기
+```python
+# 런타임에러 (RecursionError)
+import sys
+sys.setrecursionlimit(10**6) # 재귀 깊이를 늘리는 코드
+
 ```
