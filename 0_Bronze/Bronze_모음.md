@@ -38,6 +38,14 @@ print(word[i], end="\n") # 출력 후 줄내림
 print(word[i], end='') # 공백 없이 이어서 출력
 ```
 
+따옴표 출력하기
+```python
+# 큰따옴표안에서 큰따옴표를 출력하려면
+print("\"")
+# 작은따옴표안에서 작은따옴표를 출력하려면
+print('\'')
+```
+
 time()
 ```python
 import time
