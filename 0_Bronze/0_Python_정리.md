@@ -117,6 +117,8 @@ li.append(x)
 li.count(x)
 # 특정 값을 가진 인덱스 찾기
 li.index(값)
+# 뒤집기
+li[::-1]
 ```
 
 집합 set() 관련 함수
@@ -141,4 +143,12 @@ sorted_dic = sorted(dic.items(), key=lambda item:item[1], reverse=True) # value 
 import sys
 sys.setrecursionlimit(10**6) # 재귀 깊이를 늘리는 코드
 
+```
+
+순열 / 조합
+```python
+# 조합
+from itertools import combinations
+combinations(리스트, 개수)
+combinations(range(m), n)
 ```
