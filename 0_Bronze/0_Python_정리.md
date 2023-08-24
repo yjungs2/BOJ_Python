@@ -36,6 +36,7 @@ print(" ".join(map(str, num))) # 공백으로 구분한 숫자 출력
 ```python
 print(word[i], end="\n") # 출력 후 줄내림
 print(word[i], end='') # 공백 없이 이어서 출력
+print(word[i], end=' ') # 공백으로 구분하여 출력
 ```
 
 따옴표 출력하기
@@ -99,16 +100,6 @@ print(gcd(a,b)) # 최대공약수
 print(a*b//gcd(a,b)) # 최소공배수
 ```
 
-최빈값 Counter
-```python
-from collections import Counter
-
-nums = [1,3,8,-2,2,3,8,6,6]
-nums.sort()
-cnt = Counter(nums).most_common()
-print(cnt) # [(3, 2), (6, 2), (8, 2), (-2, 1), (1, 1), (2, 1)]
-```
-
 리스트 list() 관련 함수
 ```python
 # 추가
@@ -151,4 +142,14 @@ sys.setrecursionlimit(10**6) # 재귀 깊이를 늘리는 코드
 from itertools import combinations
 combinations(리스트, 개수)
 combinations(range(m), n)
+```
+
+최빈값 Counter
+```python
+from collections import Counter
+
+nums = [1,3,8,-2,2,3,8,6,6]
+nums.sort()
+cnt = Counter(nums).most_common()
+print(cnt) # [(3, 2), (6, 2), (8, 2), (-2, 1), (1, 1), (2, 1)]
 ```
