@@ -110,6 +110,8 @@ li.count(x)
 li.index(값)
 # 뒤집기
 li[::-1]
+# 대체하기
+li = li.replace('a', 'b')
 ```
 
 집합 set() 관련 함수
@@ -126,6 +128,21 @@ sorted_dic = sorted(dic.items(), key=lambda item:item[0], reverse=True) # key �
 # 딕셔너리 value 기준 정렬
 sorted_dic = sorted(dic.items(), key=lambda item:item[1]) # value 오름차순 정렬
 sorted_dic = sorted(dic.items(), key=lambda item:item[1], reverse=True) # value 내림차순 정렬
+```
+
+덱 deque() 관련 함수
+```python
+import sys
+from collections import deque
+dq = deque()
+
+# 추가 (삽입)
+dq.insert(0, a)
+dq.append(a)
+
+# 제거
+dq.pop()
+dq.popleft()
 ```
 
 런타임 에러 해결하기
