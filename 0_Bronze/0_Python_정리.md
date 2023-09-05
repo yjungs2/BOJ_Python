@@ -128,6 +128,8 @@ sorted_dic = sorted(dic.items(), key=lambda item:item[0], reverse=True) # key �
 # 딕셔너리 value 기준 정렬
 sorted_dic = sorted(dic.items(), key=lambda item:item[1]) # value 오름차순 정렬
 sorted_dic = sorted(dic.items(), key=lambda item:item[1], reverse=True) # value 내림차순 정렬
+# 딕셔너리 다중 정렬
+
 ```
 
 덱 deque() 관련 함수
